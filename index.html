@@ -5,15 +5,14 @@
     
       <meta charset="utf-8">
       <meta name="viewport" content="width=device-width,initial-scale=1">
-
-      <body style="background-color:rgb(157, 179, 60);"></body> 
       
       
       
-        <link rel="prev" href="../about/">
+      
+        <link rel="prev" href="../aws-static-web-hosting/">
       
       
-        <link rel="next" href="../containerization-deployment/">
+        <link rel="next" href="../serverless-on-aws/">
       
       
       <link rel="icon" href="../assets/images/favicon.png">
@@ -21,7 +20,7 @@
     
     
       
-        <title>AWS Static Web Hosting - CloudSpace DevOps Accelerator Program (DAP)</title>
+        <title>Containerization Fun - CloudSpace DevOps Accelerator Program (DAP)</title>
       
     
     
@@ -66,7 +65,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#hosting-a-static-website-using-amazon-s3" class="md-skip">
+        <a href="#containerized-deployment" class="md-skip">
           Skip to content
         </a>
       
@@ -102,7 +101,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              AWS Static Web Hosting
+              Containerization Fun
             
           </span>
         </div>
@@ -268,6 +267,27 @@
                 
   
   
+  
+  
+    <li class="md-nav__item">
+      <a href="../aws-static-web-hosting/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    AWS Static Web Hosting
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
     
   
   
@@ -284,7 +304,7 @@
           
   
   <span class="md-ellipsis">
-    AWS Static Web Hosting
+    Containerization Fun
   </span>
   
 
@@ -295,7 +315,7 @@
         
   
   <span class="md-ellipsis">
-    AWS Static Web Hosting
+    Containerization Fun
   </span>
   
 
@@ -353,11 +373,26 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#project-requirements" class="md-nav__link">
+  <a href="#getting-started" class="md-nav__link">
     <span class="md-ellipsis">
-      🌟 Project Requirements
+      🚦 Getting Started
     </span>
   </a>
+  
+    <nav class="md-nav" aria-label="🚦 Getting Started">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#prerequisites" class="md-nav__link">
+    <span class="md-ellipsis">
+      🌟 Prerequisites
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
       
@@ -371,69 +406,45 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#instructions" class="md-nav__link">
+  <a href="#step-1-setup-ec2-instance" class="md-nav__link">
     <span class="md-ellipsis">
-      🚀 Instructions
+      ✨ Step-1-Setup-EC2-instance
     </span>
   </a>
-  
-    <nav class="md-nav" aria-label="🚀 Instructions">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#step-1-setup-s3-bucket" class="md-nav__link">
-    <span class="md-ellipsis">
-      ✨ Step-1-Setup-S3-Bucket
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#step-2-setup-pipeline" class="md-nav__link">
-    <span class="md-ellipsis">
-      ✨ Step-2-Setup-Pipeline
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#step-3-test-the-pipeline" class="md-nav__link">
-    <span class="md-ellipsis">
-      ✨ Step-3-Test-The-Pipeline
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#step-4-setting-up-cloudfront" class="md-nav__link">
-    <span class="md-ellipsis">
-      ✨ Step-4-Setting-Up-CloudFront
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#step-5-testing-up-cloudfront" class="md-nav__link">
-    <span class="md-ellipsis">
-      ✨ Step-5-Testing-Up-Cloudfront
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#license" class="md-nav__link">
+  <a href="#step-2-setup-jenkins" class="md-nav__link">
     <span class="md-ellipsis">
-      📄 License
+      ✨ Step-2-Setup-Jenkins
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#step-3-setup-jenkins-pipeline" class="md-nav__link">
+    <span class="md-ellipsis">
+      ✨ Step-3-Setup-Jenkins-Pipeline
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#step-4-push-docker-container-to-dockerhub" class="md-nav__link">
+    <span class="md-ellipsis">
+      ✨ Step-4-push-Docker-container-to-Dockerhub
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#step-5-setup-aws-codeartifact" class="md-nav__link">
+    <span class="md-ellipsis">
+      ✨ Step-5-Setup-AWS-CodeArtifact
     </span>
   </a>
   
@@ -443,27 +454,6 @@
   
 </nav>
       
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../containerization-deployment/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    Containerization Fun
-  </span>
-  
-
-      </a>
     </li>
   
 
@@ -1735,11 +1725,26 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#project-requirements" class="md-nav__link">
+  <a href="#getting-started" class="md-nav__link">
     <span class="md-ellipsis">
-      🌟 Project Requirements
+      🚦 Getting Started
     </span>
   </a>
+  
+    <nav class="md-nav" aria-label="🚦 Getting Started">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#prerequisites" class="md-nav__link">
+    <span class="md-ellipsis">
+      🌟 Prerequisites
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
       
@@ -1753,69 +1758,45 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#instructions" class="md-nav__link">
+  <a href="#step-1-setup-ec2-instance" class="md-nav__link">
     <span class="md-ellipsis">
-      🚀 Instructions
+      ✨ Step-1-Setup-EC2-instance
     </span>
   </a>
-  
-    <nav class="md-nav" aria-label="🚀 Instructions">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#step-1-setup-s3-bucket" class="md-nav__link">
-    <span class="md-ellipsis">
-      ✨ Step-1-Setup-S3-Bucket
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#step-2-setup-pipeline" class="md-nav__link">
-    <span class="md-ellipsis">
-      ✨ Step-2-Setup-Pipeline
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#step-3-test-the-pipeline" class="md-nav__link">
-    <span class="md-ellipsis">
-      ✨ Step-3-Test-The-Pipeline
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#step-4-setting-up-cloudfront" class="md-nav__link">
-    <span class="md-ellipsis">
-      ✨ Step-4-Setting-Up-CloudFront
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#step-5-testing-up-cloudfront" class="md-nav__link">
-    <span class="md-ellipsis">
-      ✨ Step-5-Testing-Up-Cloudfront
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#license" class="md-nav__link">
+  <a href="#step-2-setup-jenkins" class="md-nav__link">
     <span class="md-ellipsis">
-      📄 License
+      ✨ Step-2-Setup-Jenkins
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#step-3-setup-jenkins-pipeline" class="md-nav__link">
+    <span class="md-ellipsis">
+      ✨ Step-3-Setup-Jenkins-Pipeline
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#step-4-push-docker-container-to-dockerhub" class="md-nav__link">
+    <span class="md-ellipsis">
+      ✨ Step-4-push-Docker-container-to-Dockerhub
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#step-5-setup-aws-codeartifact" class="md-nav__link">
+    <span class="md-ellipsis">
+      ✨ Step-5-Setup-AWS-CodeArtifact
     </span>
   </a>
   
@@ -1836,119 +1817,287 @@
                   
 
 
-<h1 id="hosting-a-static-website-using-amazon-s3">Hosting a Static Website Using Amazon S3</h1>
-<p>Automate the Process of Hosting a Static Website Using Amazon S3 and AWS Developer Tools.</p>
+<h1 id="containerized-deployment">containerized deployment</h1>
+<p>Automate the Process of deloying a containerized application</p>
 <h2 id="project-overview">🚀 Project Overview</h2>
-<p>For this project we will have a static website hosted on S3 and will be utilizing CodePipeline to monitor and automatically deploy changes made from our CodeCommit repository where our index.html is hosted. Then we’ll setup CloudFront as a CDN that will redirect HTTP requests to HTTPS.</p>
+<p>In this project, we will explore a DevOps project that involves deploying a Django notes app on an EC2 instance using Jenkins declarative CI/CD pipeline. We will leverage Docker containers and Docker Hub for containerization and image management. The project focuses on automating the deployment process, ensuring seamless integration and delivery of the application.</p>
 <h2 id="problem-statement">🔧 Problem Statement</h2>
-<p>Inefficient manual deployment processes and lack of content delivery network (CDN) optimization hinder the seamless deployment and accessibility of a static website hosted on Amazon S3. Additionally, the absence of automated monitoring and deployment mechanisms further complicates the update process, leading to delays and potential inconsistencies in website content. To address these challenges, our project aims to automate the deployment process using AWS services such as CodePipeline and CodeCommit, while also enhancing website performance and security by implementing CloudFront as a CDN to redirect HTTP requests to HTTPS.</p>
+<p>The goal of this project is to develop a robust and automated deployment solution for containerized applications, leveraging Jenkins as the orchestration engine and Docker for containerization. By automating the deployment process, we aim to enhance efficiency, reduce manual intervention, and establish a continuous deployment pipeline that ensures rapid, consistent, and reliable delivery of containerized applications.</p>
 <h2 id="techonology-stack">💽 Techonology Stack</h2>
-<p>● <strong>CDN:</strong> AWS Cloudfront</p>
-<p>● <strong>Storage:</strong> AWS S3 for file storage.</p>
-<p>● <strong>CI/CD:</strong> Automate deployment using GitHub and AWS Code Pipeline</p>
+<p>● <strong>Server</strong>: EC2</p>
+<p>● <strong>Containerization Platform</strong>: Docker</p>
+<p>● <strong>CI/CD</strong>: Automate deployment using Jenkins</p>
+<p>● <strong>Version Control</strong>: Automate deployment using Jenkins</p>
 <h2 id="architecture-diagram">📌 Architecture Diagram</h2>
-<p><img alt="alt diagram" src="../assets/images/aws-static-web-hosting/architecture-diagram0.png" /></p>
-<h2 id="project-requirements">🌟 Project Requirements</h2>
-<p>Your team has asked you to create a way to automate the deployment of a website. Currently your developers have to go through the process manually to test each new update to their code. You’ll need to provide the static site URL to the developers and also make a modification to the code in the GitHub repo to verify the pipeline is working.</p>
-<p><code>https://github.com/cloudspaceacademy/aws-static-web-hosting.git</code></p>
-<ol>
-<li>Create a new repository in GitHub and load the attached HTML.</li>
-<li>Create and configure a S3 bucket to host your static website.</li>
-<li>Create a CI/CD pipeline using the <strong>AWS Codepipeline service </strong>.</li>
-<li>Set your repo as the Source Stage of the Codepipeline that is triggered when an update is made to a GitHub repo.</li>
-<li>For the deploy stage select your S3 bucket.</li>
-<li>Deploy the pipeline and verify that you can reach the static website.</li>
-<li>Make an update to the code in your github to verify that the codepipeline is triggered. This can be as simple as a change to the Readme file because any change to the files should trigger the workflow.</li>
-</ol>
-<p>Note: you can skip the Build stage for this project.</p>
-<p>Your app is very popular all around the world but some users are complaining about slow load times in some Regions. You have been asked to add CloudFront as a CDN for your static website. CloudFront should allow caching of your static webpage and only allow HTTPS traffic to your site.</p>
+<p><img alt="alt diagram" src="../assets/images/containerization-deployment/architecture-diagram.png" /></p>
+<h2 id="getting-started">🚦 Getting Started</h2>
+<h3 id="prerequisites">🌟 Prerequisites</h3>
+<p>Before diving into the project, let’s ensure that we have the necessary prerequisites.</p>
+<ul>
+<li>AWS account.</li>
+<li>AWS CLI.</li>
+<li>Dockerhub account.</li>
+<li>Git for cloning the repository.</li>
+</ul>
 <h2 id="table-of-contents">📋 Table of Contents</h2>
 <ul>
-<li><a href="#Step-1-Setup-S3-Bucket">Step-1: Setup S3 Bucket</a></li>
-<li><a href="#Step-2-Setup-Pipeline">Step-2: Setup Pipeline</a></li>
-<li><a href="#Step-3-Test-The-Pipeline">Step-3: Test The Pipeline</a></li>
-<li><a href="#Step-4-Setting-Up-CloudFront">Step-4: Setting Up Cloudfront</a></li>
-<li><a href="#Step-5-Testing-Up-Cloudfront">Step-5: Testing Up Cloudfront</a></li>
+<li><a href="#-Step-1-Setup-EC2-instance">Step-1: Setup EC2 instance</a></li>
+<li><a href="#-Step-2-Setup-Jenkins">Step-2: Setup Jenkins</a></li>
+<li><a href="#-Step-3-Setup-Jenkins-Pipeline">Step-3: Setup Jenkins pipeline</a></li>
+<li><a href="#-Step-4-push-Docker-container-to-Dockerhub">Step-4: Push Docker container to Dockerhub</a></li>
+<li><a href="Step-5-Setup-AWS-CodeArtifact">Step-5: AWS-CodeArtifact</a></li>
 </ul>
-<h2 id="instructions">🚀 Instructions</h2>
-<p>Create New Repository and Clone it.</p>
-<p>First we need to create a repository.</p>
-<p>Navigate to <code>GitHub -&gt; Repositories -&gt; Create Repository</code> and give it a name.</p>
-<p><img alt="alt text" src="../assets/images/aws-static-web-hosting/a-web-hosting01.png" /></p>
-<p><img alt="alt text" src="../assets/images/aws-static-web-hosting/a-web-hosting02.png" /></p>
-<p>Use the Clone URL to clone it to your local system.</p>
-<p><img alt="alt text" src="../assets/images/aws-static-web-hosting/a-web-hosting03.png" /></p>
-<p>Add your files to your local repository, commit your changes, and push your changes.</p>
-<p><img alt="alt text" src="../assets/images/aws-static-web-hosting/a-web-hosting04.png" /></p>
-<p>File has been pushed from our local repo to Github.</p>
-<h3 id="step-1-setup-s3-bucket">✨ Step-1-Setup-S3-Bucket</h3>
-<p><strong>Create S3 Bucket</strong></p>
-<p><code>Navigate to S3 -&gt; Create Bucket.</code></p>
-<p>Uncheck <strong>Block all Public Access</strong> and acknowledge.</p>
-<p><code>Navigate to your bucket -&gt; Properties -&gt; Edit Static website hosting</code></p>
-<p>Enable Static website hosting and add your index document</p>
-<p>Now we need to create a bucket policy. Got to Permissions and edit the bucket policy.</p>
-<p>The following will allow everyone to access the bucket using the GetObject command,</p>
-<p><img alt="alt text" src="../assets/images/aws-static-web-hosting/a-web-hosting3.png" /></p>
-<h3 id="step-2-setup-pipeline">✨ Step-2-Setup-Pipeline</h3>
-<p><strong>Setup Pipeline</strong></p>
-<p><code>Navigate to CodePipeline -&gt; Create pipeline provide a name and click next.</code></p>
-<p>Source Provider = <strong>GitHub (Version 2)</strong></p>
-<p><img alt="alt text" src="../assets/images/aws-static-web-hosting/a-web-hosting05.png" /></p>
-<p>Click on <code>Connect to GitHub</code></p>
-<p>Now, let's connect the pipeline to our GitHub repository</p>
-<p>On <code>Create a connection</code> give a name to the connection. Next, click on <code>Connect to GitHub</code>, Then <code>Connect</code> </p>
-<p><img alt="alt text" src="../assets/images/aws-static-web-hosting/a-web-hosting06.png" /></p>
-<p>If you are asked to log into your github account, enter your credentials</p>
-<p><img alt="alt text" src="../assets/images/aws-static-web-hosting/a-web-hosting007.png" /></p>
-<p><img alt="alt text" src="../assets/images/aws-static-web-hosting/a-web-hosting07.png" /></p>
-<p>At this point, the pipeline and the Github repository are connected</p>
-<p>Repository name = <strong>Select your repo from the list</strong></p>
-<p>Branch Name = <strong>main</strong></p>
-<p><img alt="alt text" src="../assets/images/aws-static-web-hosting/a-web-hosting08.png" /></p>
-<p>On the triggers section, add the branch <code>main</code></p>
-<p><img alt="alt text" src="../assets/images/aws-static-web-hosting/a-web-hosting09.png" /></p>
-<p>Everything else is default, click on <code>Next</code></p>
-<p>Skip the build stage.</p>
-<p>You’ll want to use the following:</p>
-<p>Deploy Provider: <strong>Amazon S3</strong></p>
-<p>Region: <strong>US East</strong></p>
-<p>Bucket: <strong>Bucket Name</strong></p>
-<p><img alt="alt text" src="../assets/images/aws-static-web-hosting/a-web-hosting6.png" /></p>
-<p>We can see that it is succeeded.</p>
-<p><img alt="alt text" src="../assets/images/aws-static-web-hosting/a-web-hosting7.png" /></p>
-<p>Let’s test if it works by going checking our bucket website endpoint. You can find this under properties of your bucket in the static website hosting section.</p>
-<p><img alt="alt text" src="../assets/images/aws-static-web-hosting/a-web-hosting8.png" /></p>
-<h3 id="step-3-test-the-pipeline">✨ Step-3-Test-The-Pipeline</h3>
-<p><strong>Test the Pipeline</strong></p>
-<p>We will be testing the pipeline by modifying the file locally, pushing the file to GitHub. CodePipeline should see this change and deploy our new file with our changes to the website.</p>
-<p>Update the background color by adding this line of code to your html file, commit the changes and push it to GitHub:</p>
-<pre><code>&lt;body style=&quot;background-color:MediumSeaGreen;&quot;&gt;&lt;/body&gt; 
+<h2 id="step-1-setup-ec2-instance">✨ Step-1-Setup-EC2-instance</h2>
+<ul>
+<li>
+<p>First of all, go to the AWS portal, and create a new instance.
+    Example: 
+        · Name: jenkins-server
+        · AMI: ubuntu.
+        · Instance type: t2.micro (free tier).
+        · Key pair login: Create &gt; docker.pem.
+        · Allow HTTP.
+        · Allow HTTPS.
+        (Download the .pem file.)</p>
+<p>Click on Launch Instance, then connect to the EC2 instance and install following packages</p>
+</li>
+<li>
+<p><a href="https://docs.docker.com/engine/install/">Install Docker</a></p>
+</li>
+<li>
+<p>Install Java</p>
+<p>Install Openjdk-17-jre- by running the following command: <code>sudo apt install openjdk-17-jre</code></p>
+</li>
+<li>
+<p><a href="https://www.jenkins.io/doc/book/installing/">Install Jenkins</a></p>
+</li>
+<li>
+<p>Install Docker compose </p>
+<p>run the following command: <code>sudo apt-get install docker-compose</code></p>
+</li>
+</ul>
+<p>Make sure you have this Installed on your system.</p>
+<p>Additionally, we need to add users to the Docker group to grant them appropriate permissions. Run the following commands to add users to the Docker group:</p>
+<pre><code class="language-bash">
+    sudo usermod -aG docker $USER
+    sudo usermod -aG docker jenkins
+    sudo reboot
+
 </code></pre>
-<p>We can see that CodePipeline saw the change and pushed our new changes.</p>
-<p><img alt="alt text" src="../assets/images/aws-static-web-hosting/a-web-hosting10.png" /></p>
-<p>I checked my endpoint and see that the changes have applied.</p>
-<p><img alt="alt text" src="../assets/images/aws-static-web-hosting/a-web-hosting11.png" /></p>
-<h3 id="step-4-setting-up-cloudfront">✨ Step-4-Setting-Up-CloudFront</h3>
-<p><strong>Setting up CloudFront</strong></p>
-<p>First go to the CloudFront in the AWS Console and click on Create Distribution.</p>
-<p>Start typing your bucket name and it’ll auto-populate.</p>
-<p><img alt="alt text" src="../assets/images/aws-static-web-hosting/a-web-hosting12.png" /></p>
-<p>Scroll down a little bit and change the view to Redirect HTTP to HTTPS and then create distribution.</p>
-<p><img alt="alt text" src="../assets/images/aws-static-web-hosting/a-web-hosting13.png" /></p>
-<p>This should send any <strong>HTTP</strong> request to <strong>HTTPS</strong>. No need to enable WAF</p>
-<p>Wait about 10 mins for the status to change from Deploying to Enabled.</p>
-<p>Click on your distribution and copy the Distribution domain name.</p>
-<p><img alt="alt text" src="../assets/images/aws-static-web-hosting/a-web-hosting14.png" /></p>
-<p>Paste it into your browser but don’t hit enter yet. The copied link will run as paste in HTTPS. Since we want to make sure that the redirect we set works. We’re going to put http in the front and append our index.html file to the end.</p>
-<h3 id="step-5-testing-up-cloudfront">✨ Step-5-Testing-Up-Cloudfront</h3>
-<p><strong>Testing up CloudFront</strong></p>
-<p><code>http://d3npwzbyxhvw2i.cloudfront.net/index.html</code></p>
-<p>Now that we enter, we can see the request was redirected to HTTPS.</p>
-<p><img alt="alt text" src="../assets/images/aws-static-web-hosting/a-web-hosting15.png" /></p>
-<p>We have successfully created a repository, a static website and used CodePipeline to automatically deploy our changes. Then we setup CloudFront for our static website.</p>
-<h2 id="license">📄 License</h2>
-<p>This project is licensed under the <strong>MIT License.</strong></p>
+<p>Remember to reboot the system after making these changes.</p>
+<p><img alt="alt diagram" src="../assets/images/containerization-deployment/containerization-deployment2.png" /></p>
+<h2 id="step-2-setup-jenkins">✨ Step-2-Setup-Jenkins</h2>
+<ul>
+<li>
+<p>Now, we will allow “Inbound Rule” ports 8080 and 8000 for this machine from a security group. We can find the security group in the ec2 instance description.</p>
+</li>
+<li>
+<p>Now, Copy the Public Ip of the machine and paste it to the browser to access the Jenkins portal.</p>
+</li>
+<li>
+<p>We need an Administrator Password to unlock this. Run following command</p>
+</li>
+<li>
+<p><code>cat /var/lib/jenkins/secrets/initialAdminPassord</code></p>
+</li>
+<li>
+<p>Now Click on, “Install Suggested Plugins”</p>
+</li>
+<li>
+<p>Now, Jenkins will ask us to create the First Admin User.</p>
+</li>
+<li>
+<p>You can get Jenkins homepage.</p>
+</li>
+</ul>
+<h2 id="step-3-setup-jenkins-pipeline">✨ Step-3-Setup-Jenkins-Pipeline</h2>
+<p>After configuring Jenkins, lets create a CI/CD pipeline to understand the stages.</p>
+<ul>
+<li>From Jenkins Dashboard, Click on “New Item”.</li>
+</ul>
+<p><img alt="alt diagram" src="../assets/images/containerization-deployment/containerization-deployment3.png" /></p>
+<ul>
+<li>Now, Add the name as
+    Name: notes-app-cicd
+    Project: Pipeline
+    Click “Ok”.</li>
+</ul>
+<p>Now we have to configure pipeline as follows</p>
+<p>Dashboards &gt; notes-app-cicd &gt; configuration &gt; general</p>
+<p>Check✅Github project</p>
+<p><a href="https://github.com/cloudspaceacademy/containerization-deployment.git">project url</a></p>
+<p><img alt="alt diagram" src="../assets/images/containerization-deployment/containerization-deployment4.png" /></p>
+<p>Check ✅GitHub hook trigger for GITScm polling</p>
+<p>Put this basic Declarative pipeline code in script dialog box</p>
+<pre><code class="language-bash">
+    pipeline {
+        agent any
+
+        stages {
+           stage('Clone Code') {
+                steps {
+                    echo 'Cloning the code'
+                }
+            }
+            stage('Build') {
+                steps {
+                    echo 'This is Build Stage'
+                }
+            }
+            stage('Push to Docker hub') {
+                steps {
+                    echo 'This is Test stage'
+                }
+            }
+            stage('Deployement') {
+                steps {
+                    echo 'Deploying container'
+                }
+            }
+        }
+    }
+
+</code></pre>
+<p>This code represents a Jenkins declarative pipeline, which is a popular way to define continuous integration and continuous deployment (CI/CD) workflows. Let’s go through each section and understand its purpose:</p>
+<ul>
+<li>
+<p><strong><code>agent any</code></strong>  : This line specifies that the pipeline can run on any available agent or executor in the Jenkins environment.</p>
+</li>
+<li>
+<p><strong><code>stages</code></strong>: This block defines the different stages of the pipeline. Each stage represents a logical step in the CI/CD process.</p>
+</li>
+<li>
+<p><strong><code>stage('Clone Code')</code></strong>: This stage is responsible for cloning the source code repository. In this case, the pipeline simply echoes the message "Cloning the code." In a real scenario, this stage would typically include commands to clone the repository using a version control system like Git.</p>
+</li>
+<li>
+<p><strong><code>stage('Build')</code></strong>: This stage is responsible for building the application or project. Here, the pipeline echoes the message "This is the Build Stage." In a real scenario, this stage would typically include commands to compile the code, run tests, and generate build artifacts.</p>
+</li>
+<li>
+<p><strong><code>stage('Push to Docker hub')</code></strong>: This stage is responsible for pushing the built artifacts to a Docker registry (such as Docker Hub). The pipeline echoes the message "This is the Test stage." In a real scenario, this stage would typically include commands to package the application into a Docker container and push it to the desired registry.</p>
+</li>
+<li>
+<p><strong><code>stage('Deployment')</code></strong>: This stage is responsible for deploying the application or container to the target environment. The pipeline echoes the message "Deploying container." In a real scenario, this stage would typically include commands to deploy the Docker container or perform any necessary configuration and setup for the application to run.</p>
+</li>
+</ul>
+<p>Each stage can have more complex logic and multiple steps, such as running shell commands, executing scripts, or invoking external tools.</p>
+<p>By defining the pipeline stages and their associated steps, Jenkins can automate the entire CI/CD process, providing a consistent and reproducible workflow for building, testing, and deploying software applications.</p>
+<p><img alt="alt diagram" src="../assets/images/containerization-deployment/containerization-deployment5.png" /></p>
+<ul>
+<li>Now Click on Save button and start the build on pipeline page</li>
+</ul>
+<p><img alt="alt diagram" src="../assets/images/containerization-deployment/containerization-deployment6.png" /></p>
+<ul>
+<li>After getting success, you can see stages are green boxes with execution time.</li>
+</ul>
+<h2 id="step-4-push-docker-container-to-dockerhub">✨ Step-4-push-Docker-container-to-Dockerhub</h2>
+<ol>
+<li>
+<p>Clone the code
+    In the pipeline script, add the following code to clone the code from your repository:</p>
+<p>```bash</p>
+<pre><code>git url: "https://github.com/cloudspaceacademy/containerization-deployment.git", branch: "main"
+</code></pre>
+<p>```</p>
+</li>
+<li>
+<p>Build the code
+    Add the following code to build the application and create docker image with tag</p>
+<p><code>bash
+    sh "docker build -t notes-app ."</code></p>
+</li>
+<li>
+<p>Push to Docker Hub
+    Add the code to push the Docker image to Docker Hub:</p>
+<p>For docker login in pipeline you have to create docker credentials and use them as environment variable</p>
+<p>Create Credentials in Dashboard &gt; Manage jenkins &gt; Credentials &gt; System &gt; Global credentials</p>
+</li>
+</ol>
+<p><img alt="alt diagram" src="../assets/images/containerization-deployment/containerization-deployment7.png" /></p>
+<pre><code class="language-bash">    withCredentials([usernamePassword(credentialsId:&quot;dockerhub-login&quot;,passwordVariable:&quot;dockerhubpass&quot;,usernameVariable:&quot;dockerhubuser&quot; )]){
+    sh &quot;docker tag notes-app ${env.dockerhubuser}/notes-app:latest&quot;
+    sh &quot;docker login -u ${env.dockerhubuser} -p ${env.dockerhubpass}&quot; 
+    sh &quot;docker push ${env.dockerhubuser}/notes-app:latest&quot;
+   }
+</code></pre>
+<ul>
+<li>
+<p><strong><code>withCredentials</code></strong>: This is a Jenkins pipeline step provided by the "Credentials Binding Plugin." It allows you to securely retrieve and use credentials within the block. In this case, we are retrieving the Docker Hub credentials using the <code>usernamePassword</code> method.</p>
+</li>
+<li>
+<p><strong><code>usernamePassword(credentialsId: "dockerhub-login", passwordVariable: "dockerhubpass", usernameVariable: "dockerhubuser")</code></strong>: This line retrieves the username and password from the Jenkins credentials store. The credentialsId parameter specifies the unique identifier of the stored Docker Hub credentials. The usernameVariable and passwordVariable parameters define the environment variables where the username and password will be stored, respectively. The environment variables are prefixed with env. in Jenkins, which is why you see env.dockerhubuser and env.dockerhubpass later in the code.</p>
+</li>
+<li>
+<p><strong><code>sh "docker tag notes-app ${env.dockerhubuser}/notes-app:latest"</code></strong>: This line creates a new Docker image tag with the Docker Hub username as a prefix. The <code>notes-app</code> is the original local image name, and we're tagging it with the new name <code>${env.dockerhubuser}/notes-app:latest</code>. This is necessary to ensure that the image can be pushed to the Docker Hub registry with the correct repository name.</p>
+</li>
+<li>
+<p><strong><code>sh "docker login -u ${env.dockerhubuser} -p ${env.dockerhubpass}"</code></strong>: This line runs the <code>docker login</code> command to authenticate with Docker Hub using the username and password retrieved from the Jenkins credentials store. The <code>-u</code> flag specifies the Docker Hub username, and the <code>-p</code> flag specifies the password.</p>
+</li>
+<li>
+<p><code>**sh "docker push ${env.dockerhubuser}/notes-app:latest"**</code>: This line pushes the tagged Docker image to the Docker Hub registry using the docker push command. After authentication, the image is pushed to the repository specified by <code>${env.dockerhubuser}/notes-app:latest</code>.</p>
+</li>
+</ul>
+<p>4.Deployment: 
+    Finally, deploy the code on the EC2 instance using the following code:</p>
+<pre><code class="language-bash">
+    sh &quot;docker-compose down &amp;&amp; docker-compose up -d&quot;
+
+</code></pre>
+<p>Here is the full Declarative pipeline code for django-notes-app deployment on ec2 using docker container.</p>
+<pre><code class="language-bash">
+    pipeline {
+        agent any
+
+        stages {
+            stage('Clone Code') {
+                steps {
+                    echo 'Cloning the code'
+
+                    git url: &quot;https://github.com/cloudspaceacademy/containerization-deployment.git&quot;, branch: &quot;main&quot;
+                }
+            }
+            stage('Build') {
+                steps {
+                    echo 'This is Build Stage'
+                    sh &quot;docker build -t notes-app .&quot;
+                }
+            }
+            stage('Push to Docker hub') {
+                steps {
+                    echo 'Pushing image to dockerhub'
+                    withCredentials([usernamePassword(credentialsId:&quot;dockerhub-login&quot;,passwordVariable:&quot;dockerhubpass&quot;,usernameVariable:&quot;dockerhubuser&quot; )]){
+                    sh &quot;docker tag notes-app ${env.dockerhubuser}/notes-app:latest&quot;
+                    sh &quot;docker login -u ${env.dockerhubuser} -p ${env.dockerhubpass}&quot; 
+                    sh &quot;docker push ${env.dockerhubuser}/notes-app:latest&quot;
+                    }
+
+                }
+            }
+            stage('Deployement') {
+                steps {
+                    echo 'Deploying container'
+                    sh &quot;docker-compose down &amp;&amp; docker-compose up -d&quot;
+                }
+            }
+        }
+    }
+
+</code></pre>
+<h2 id="step-5-setup-aws-codeartifact">✨ Step-5-Setup-AWS-CodeArtifact</h2>
+<p>Whenever the developer commits their code in GitHub, after every commit, it should reflect in the live web app.
+· For that, we will use “github webhook”.
+· Every time, a developer made a commit, a trigger will run automatically, which will rebuild the image and run a container on your behalf as a part of automation that will run the pipeline automatically.</p>
+<ul>
+<li>go to on your github repository &gt; setttings &gt; Webhook &gt; Payload URL &gt; put your jenkins public ip address &gt; “add webhook”</li>
+</ul>
+<p><img alt="alt diagram" src="../assets/images/containerization-deployment/containerization-deployment8.png" /></p>
+<ul>
+<li>Do some changes in the code and push to GitHub, this will automatically run a pipeline, and the new code will be Live.</li>
+</ul>
+<p><img alt="alt diagram" src="../assets/images/containerization-deployment/containerization-deployment9.png" /></p>
+<ul>
+<li>Now Here is the our app is live and working fine.</li>
+</ul>
+<p><img alt="alt diagram" src="../assets/images/containerization-deployment/containerization-deployment10.png" /></p>
 
 
 
